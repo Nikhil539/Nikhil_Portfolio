@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Nikhil Reddy, software engineer focused on full-stack systems and applied AI." />
+    <title>Nikhil Reddy | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Nikhil Reddy home">NR<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a><a href="#projects">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="header-github" href="https://github.com/Nikhil539" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="top">
+        <p class="eyebrow">Software engineer · Chennai, India</p>
+        <h1>Building dependable software for complex, real-world work.</h1>
+        <p class="hero-copy">I’m Nikhil Reddy, a CSE student and software developer intern at BNP Paribas. I build full-stack applications with React, Java/Spring, APIs, databases, and applied machine learning.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↓</span></a>
+          <a class="button button-secondary" href="assets/Nikhi_Reddy_Resume.pdf" download>Download resume</a>
+        </div>
+        <dl class="quick-facts">
+          <div><dt>8.64</dt><dd>CGPA / 10</dd></div>
+          <div><dt>9</dt><dd>Projects featured</dd></div>
+          <div><dt>2026</dt><dd>Graduate</dd></div>
+        </dl>
+      </section>
+
+      <section class="section agentic" id="agentic-ai">
+        <div class="section-label">01 / Agentic AI</div>
+        <div>
+          <p class="eyebrow">From production engineering to intelligent workflows</p>
+          <h2>I build AI features like software systems, not demos.</h2>
+          <p class="agentic-intro">My internship has shaped how I think about agentic AI: useful systems need secure inputs, trustworthy outputs, clear failure paths, and a human who can understand what happened. I bring that production mindset to the AI projects I build.</p>
+          <div class="agentic-layout">
+            <article class="agentic-story">
+              <h3>JobTrack AI / an agentic workflow for job applications</h3>
+              <p>JobTrack AI turns a noisy inbox into a structured application pipeline. It identifies job-related Gmail messages, asks an LLM for schema-constrained details such as company, role, status, interview dates, and deadlines, then validates the response before updating the tracker.</p>
+              <p>The workflow is designed around reliability: emails are matched against existing applications in a defined order, invalid model responses are recorded instead of silently changing data, and repeated syncs avoid duplicate processing.</p>
+              <a class="inline-link" href="https://github.com/Nikhil539/PersonalAgent" target="_blank" rel="noreferrer">Explore JobTrack AI <span>↗</span></a>
+            </article>
+            <ol class="agent-flow" aria-label="JobTrack AI workflow">
+              <li><span>01</span><div><b>Observe</b><p>Ingest and classify Gmail messages relevant to job applications.</p></div></li>
+              <li><span>02</span><div><b>Reason</b><p>Use an LLM to extract structured fields under a strict JSON schema.</p></div></li>
+              <li><span>03</span><div><b>Validate</b><p>Check dates, URLs, statuses, and response shape before persistence.</p></div></li>
+              <li><span>04</span><div><b>Act</b><p>Match applications and update a visible, auditable status history.</p></div></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-label">02 / About</div>
+        <div>
+          <h2>An engineer drawn to both systems and outcomes.</h2>
+          <p>I combine algorithmic thinking with practical product development. At BNP Paribas, I contribute to secure full-stack banking modules; outside work, I explore ML-driven decision tools, real-time dashboards, and automation.</p>
+          <p>I’m targeting software engineering roles where I can keep growing across backend systems, product engineering, and AI-enabled applications.</p>
+          <div class="skill-groups" aria-label="Technical skills">
+            <div><h3>Languages</h3><p>Java · Python · C++ · JavaScript · SQL</p></div>
+            <div><h3>Frontend & backend</h3><p>React · Node.js · Express · Spring Boot · Flask · FastAPI · REST APIs</p></div>
+            <div><h3>Data & platform</h3><p>MongoDB · PostgreSQL · Hibernate/JPA · Docker · Kubernetes · Linux · Kafka</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-label">03 / Selected work</div>
+        <div class="projects-heading"><h2>Projects that span product engineering, ML, and experimentation.</h2><p>All public GitHub repositories and the additional projects in my resume are included below.</p></div>
+        <div class="project-grid">
+          <article class="project-card featured" data-tags="full-stack utility">
+            <div class="card-top"><span class="index">01</span></div>
+            <h3>JobTrack AI <span>↗</span></h3>
+            <p>Full-stack job-application tracker with a status board, Gmail sync, AI extraction, and downloadable reporting.</p>
+            <ul><li>React dashboard and Express REST API</li><li>PostgreSQL, Prisma, and immutable status history</li><li>Secure Gmail integration and AI-powered email parsing</li></ul>
+            <div class="tags"><span>React</span><span>Express</span><span>PostgreSQL</span><span>OpenAI API</span></div>
+            <a class="card-action" href="https://github.com/Nikhil539/PersonalAgent" target="_blank" rel="noreferrer"><span>Explore project</span><b>↗</b></a>
+          </article>
+          <article class="project-card" data-tags="full-stack">
+            <div class="card-top"><span class="index">02</span></div>
+            <h3>B2B Inventory &amp; Order Management</h3>
+            <p>A logistics and inventory platform for managing orders, tracking progress, and secure user access.</p>
+            <ul><li>Inventory and order workflows</li><li>Real-time tracking updates</li><li>JWT-based authentication and authorization</li></ul>
+            <div class="tags"><span>React</span><span>Node.js</span><span>MongoDB</span><span>JWT</span></div>
+            <a class="card-action" href="assets/Nikhi_Reddy_Resume.pdf" target="_blank" rel="noreferrer"><span>View project details</span><b>↗</b></a>
+          </article>
+          <article class="project-card" data-tags="ai full-stack">
+            <div class="card-top"><span class="index">03</span></div>
+            <h3>Credit Risk Analysis with LLMs</h3>
+            <p>An explainable credit-risk assessment tool that combines ML prediction with LLM-generated financial summaries.</p>
+            <ul><li>Feature engineering and credit-risk prediction</li><li>Explainable decision summaries and reports</li><li>Responsive Flask app with REST APIs</li></ul>
+            <div class="tags"><span>Python</span><span>scikit-learn</span><span>Flask</span><span>LLMs</span></div>
+            <a class="card-action" href="assets/Nikhi_Reddy_Resume.pdf" target="_blank" rel="noreferrer"><span>View project details</span><b>↗</b></a>
+          </article>
+          <article class="project-card" data-tags="ai">
+            <div class="card-top"><span class="index">04</span></div>
+            <h3>Natural Disaster Forecasting</h3>
+            <p>Interactive ML project for estimating the probability of earthquakes, floods, and droughts.</p>
+            <ul><li>Reported accuracy: 98.2% earthquake, 99.4% flood, 80.9% drought</li><li>Streamlit interface for prediction and visualization</li><li>Notebook-based model development</li></ul>
+            <div class="tags"><span>Python</span><span>Streamlit</span><span>scikit-learn</span></div>
+            <a class="card-action" href="https://github.com/Nikhil539/Natural_Disaster_Prediction_using-machinelearning_creating-interface_using-Streamlit-and_chatbot" target="_blank" rel="noreferrer"><span>Explore project</span><b>↗</b></a>
+          </article>
+          <article class="project-card" data-tags="ai full-stack">
+            <div class="card-top"><span class="index">05</span></div>
+            <h3>Churn Prediction</h3>
+            <p>Machine-learning exploration for churn prediction with a Flask-based interface.</p>
+            <ul><li>Notebook-driven model experimentation</li><li>Prediction workflow exposed through Flask</li><li>Focused on turning ML output into a usable app</li></ul>
+            <div class="tags"><span>Python</span><span>Flask</span><span>ML</span></div>
+            <a class="card-action" href="https://github.com/Nikhil539/Churn-Prediction-using-machinelearning-creating-interface-using-flask" target="_blank" rel="noreferrer"><span>Explore project</span><b>↗</b></a>
+          </article>
+          <article class="project-card" data-tags="ai">
+            <div class="card-top"><span class="index">06</span></div>
+            <h3>E-skin</h3>
+            <p>A public Jupyter Notebook project exploring an e-skin concept.</p>
+            <ul><li>Notebook-based experimentation</li><li>Python research workflow</li><li>Available as a public repository</li></ul>
+            <div class="tags"><span>Python</span><span>Jupyter</span></div>
+            <a class="card-action" href="https://github.com/Nikhil539/E-skin" target="_blank" rel="noreferrer"><span>Explore project</span><b>↗</b></a>
+          </article>
+          <article class="project-card" data-tags="full-stack">
+            <div class="card-top"><span class="index">07</span></div>
+            <h3>Portfolio v1</h3>
+            <p>An earlier personal portfolio, retained as a public record of my TypeScript web work.</p>
+            <ul><li>Personal work showcase</li><li>TypeScript implementation</li><li>Foundation for iterative portfolio design</li></ul>
+            <div class="tags"><span>TypeScript</span><span>Web</span></div>
+            <a class="card-action" href="https://github.com/Nikhil539/portofolio" target="_blank" rel="noreferrer"><span>Explore project</span><b>↗</b></a>
+          </article>
+          <article class="project-card" data-tags="full-stack">
+            <div class="card-top"><span class="index">08</span></div>
+            <h3>Tathkart Realtime</h3>
+            <p>A public fork of a TypeScript real-time project, included for completeness and clearly marked as a fork.</p>
+            <ul><li>TypeScript codebase</li><li>Real-time application exploration</li><li>Forked from SANKEERTH569/tathkart-realtime</li></ul>
+            <div class="tags"><span>TypeScript</span><span>Realtime</span></div>
+            <a class="card-action" href="https://github.com/Nikhil539/tathkart-realtime" target="_blank" rel="noreferrer"><span>Explore project</span><b>↗</b></a>
+          </article>
+          <article class="project-card" data-tags="ai utility">
+            <div class="card-top"><span class="index">10</span></div>
+            <h3>IntentWise</h3>
+            <p>A public Python assignment repository, included as part of my complete GitHub portfolio.</p>
+            <ul><li>Python implementation</li><li>Public source available for review</li><li>Clearly labeled as an assignment</li></ul>
+            <div class="tags"><span>Python</span><span>Assignment</span></div>
+            <a class="card-action" href="https://github.com/Nikhil539/IntentWise" target="_blank" rel="noreferrer"><span>Explore project</span><b>↗</b></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience" id="experience">
+        <div class="section-label">04 / Experience &amp; education</div>
+        <div class="timeline">
+          <article><p class="period">Jan 2026 — Present</p><div><h2>Software Developer Intern <span>BNP Paribas · Chennai</span></h2><p>Developing full-stack banking modules with React, Spring Boot, REST APIs, Hibernate/JPA, and relational databases. Improved MongoDB/SQL retrieval time by 15% for large financial datasets, while working with Docker, Kubernetes, Linux, and Agile delivery practices.</p></div></article>
+          <article><p class="period">Sep 2024</p><div><h2>Research Intern <span>SIST · Chennai</span></h2><p>Worked on map-based visualization tasks using geospatial technologies under real-time conditions.</p></div></article>
+          <article><p class="period">2022 — 2026</p><div><h2>B.E., CSE (IoT &amp; Automation) <span>Sathyabama University</span></h2><p>CGPA: 8.64/10. Team Lead for the College Hackathon Club and Student Coordinator for the College Soft Skills Club.</p></div></article>
+        </div>
+      </section>
+
+      <section class="section achievements" id="achievements">
+        <div class="section-label">05 / Beyond the code</div>
+        <div><h2>Learning in public, leading in teams.</h2><div class="achievement-list"><p>Woodpecker Hackathon · NammaYatri Mobility Challenge · BNP Paribas Innoversite</p><p>NPTEL: Software Conceptual Design · Foundation of Cloud IoT Edge ML</p><p>Team Lead, College Hackathon Club (2023–2026)</p></div></div>
+      </section>
+
+      <section class="contact" id="contact">
+        <p class="eyebrow">Let’s build something useful</p>
+        <h2>Looking for a software engineer?</h2>
+        <a class="email" href="mailto:nikhilkumarreddynikhil@gmail.com">nikhilkumarreddynikhil@gmail.com <span>↗</span></a>
+        <div class="contact-links"><a href="https://github.com/Nikhil539" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/nikhil-reddy-5a4b38262" target="_blank" rel="noreferrer">LinkedIn</a><a href="tel:+919347250895">+91 93472 50895</a></div>
+      </section>
+    </main>
+    <footer><span>© 2026 Nikhil Reddy</span><span>Built with semantic HTML, CSS &amp; JavaScript</span></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
